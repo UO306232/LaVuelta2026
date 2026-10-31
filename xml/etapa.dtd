@@ -1,0 +1,64 @@
+<!ELEMENT etapas (etapa+)>
+<!ELEMENT etapa (name, numEtapa, longitudEtapa, fechaEtapa, tiempoGanador, velocidadMediaGanador, desnivelEtapa, ciudadOrigen, ciudadDestino, tipoEtapa, referencias, fotografias, videos, podcasts, lugarSalida, lugarMeta, hitos, puntosAnonimos, clasificacionEtapa, clasificacionGeneral, clasificacionEquipos)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT numEtapa (#PCDATA)>
+<!ELEMENT longitudEtapa EMPTY>
+<!ELEMENT fechaEtapa (#PCDATA)>
+<!ELEMENT tiempoGanador (#PCDATA)>
+<!ELEMENT velocidadMediaGanador EMPTY>
+<!ELEMENT desnivelEtapa EMPTY>
+<!ELEMENT ciudadOrigen (#PCDATA)>
+<!ELEMENT ciudadDestino (#PCDATA)>
+<!ELEMENT tipoEtapa (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT fotografias (fotografia+)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT podcasts (podcast+)>
+<!ELEMENT podcast (#PCDATA)>
+<!ELEMENT lugarSalida (#PCDATA)>
+<!ELEMENT lugarMeta (#PCDATA)>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (#PCDATA)>
+<!ELEMENT puntosAnonimos (punto*)>
+<!ELEMENT punto EMPTY>
+<!ELEMENT clasificacionEtapa (corredor+)>
+<!ELEMENT corredor (#PCDATA)>
+<!ELEMENT clasificacionGeneral (corredor+)>
+<!ELEMENT clasificacionEquipos (equipo+)>
+<!ELEMENT equipo (#PCDATA)>
+
+
+<!ATTLIST longitudEtapa
+    distance CDATA #REQUIRED
+    measure CDATA #REQUIRED>
+<!ATTLIST velocidadMediaGanador
+    speed CDATA #REQUIRED
+    measure CDATA #REQUIRED>
+<!ATTLIST desnivelEtapa
+    height CDATA #REQUIRED
+    measure CDATA #REQUIRED>
+<!ATTLIST lugarSalida
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED>
+<!ATTLIST lugarMeta
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED>
+<!ATTLIST hito
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    distance CDATA #REQUIRED>
+<!ATTLIST punto
+    longitud CDATA #REQUIRED
+    latitud CDATA #REQUIRED
+    altitud CDATA #REQUIRED
+    distance CDATA #REQUIRED>
+<!ATTLIST corredor
+    diferencia CDATA #REQUIRED>
+<!ATTLIST equipo
+    diferencia CDATA #REQUIRED>

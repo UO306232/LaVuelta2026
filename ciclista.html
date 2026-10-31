@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026:Ciclista</title>
+
+    <meta name="author" content="Diego Hevia Costales" />
+    <meta name="description" content="ciclista" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+   <!-- contenido de ciclista.html  -->
+   <header>
+		<h1> <a href="index.html">La vuelta 2026</a> </h1>
+		<nav>
+			<a href="index.html" title="Página de inicio"> Inicio</a>
+			<a href="ciclista.html" aria-current="page" title="Descripcion del ciclista"> Ciclista</a>
+			<a href="equipo.html" title="Descripcion del equipo"> Equipo</a>
+			<a href="etapa.html" title="Descripcion de la etapa"> Etapa</a>
+			<a href="meteorologia.html" title="Pronostico meteorologico"> Meteorología</a>
+			<a href="clasificaciones.html" title="Resumen de las clasificaciones"> Clasificaciones</a>
+			<a href="juegos.html" title="Juego"> Juegos</a>
+			<a href="ayuda.html" title="Ayuda para el uso de la web"> Ayuda</a>
+		</nav>
+   </header>
+   <nav aria-label="migas">
+	<ol>
+		<li><a href="index.html">Inicio</a></li>
+		<li>&gt;&gt;</li>
+		<li>Ciclista</li>
+	</ol>
+   </nav>
+   <main>
+   <h2>Pello Bilbao</h2>
+   <section>
+        <h3>Datos personales</h3>
+        <ul>
+            <li>Pello Bilbao López de Armentia</li>
+            <li>25/02/1990</li>
+            <li>España</li>
+            <li>BAHRAIN VICTORIOUS</li>
+            <li>Dorsal: 71</li>
+        </ul>
+		<picture>
+			<source media="(max-width: 768px)" srcset="multimedia/pello_bilbao-movil.png" width="400" height="607"/>
+			<source media="(max-width: 1024px)" srcset="multimedia/pello_bilbao-tablet.png" width="600" height="911"/>
+			<img src="multimedia/pello_bilbao.png" alt="Fotografia oficial de Pello Bilbao" width="300" height="455"/>
+		</picture>
+   </section>
+   <section>
+    <h3>Datos equipos</h3>
+    <ol>
+        <li>Bahrain Victorious (2021 - Presente)</li>
+        <li>Bahrain McLaren (2020)</li>
+        <li>Astana Pro Team (2017 - 2019)</li>
+        <li>Caja Rural Seguros (2014 - 2016)</li>
+        <li>Euskatel-Euskadi (2011 - 2013)</li>
+        <li>Naturgas Energia (2010)</li>
+    </ol>
+   </section>
+   <section>
+	<h3>Temporada 2025</h3>
+	<table>
+		<tr>
+			<th id="th_dato" scope="col">Nombre del Datos</th>
+			<th id="th_resultado" scope="col">Resultado</th>
+		</tr>
+		<tr>
+			<td headers="th_dato">Podios en clasificaciones generales</td>
+			<td headers="th_resultado">2</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Segundos puestos en etapas</td>
+			<td headers="th_resultado">2</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Terceros puestos en etapas</td>
+			<td headers="th_resultado">2</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Top-10 en clasificaciones generales</td>
+			<td headers="th_resultado">6</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Top-10 en clásicas de un día</td>
+			<td headers="th_resultado">1</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Etapas destacadas en Grandes Vueltas</td>
+			<td headers="th_resultado">2</td>
+		</tr>
+		<tr>
+			<td headers="th_dato">Otras etapas en Top-10</td>
+			<td headers="th_resultado">10</td>
+		</tr>
+	</table>
+   </section>
+   <section>
+	<h3>Multimedia</h3>
+	<p>
+		Equipo <a href="https://www.lavuelta.es/es/equipo/TBV/bahrain-victorious">Bahrain Victorious</a> en la Vuelta Ciclista a España 2026.
+	</p>
+	<video controls poster="multimedia/posterEquipo.png">
+		<source src="multimedia/presentacionEquipo.webm" type="video/webm" />
+		<source src="multimedia/presentacionEquipo.mp4" type="video/mp4" />
+	</video>
+	<audio controls>
+		<source src="multimedia/audioEquipo.mp3" type="audio/mp3" />
+		<source src="multimedia/audioEquipo.wav" type="audio/wav" />
+	</audio>
+   </section>
+   </main>
+   <footer>
+    <p>Diego Hevia Costales</p>
+    <address>
+        <a href="mailto:UO306232@uniovi.es">UO306232@uniovi.es</a>
+    </address>
+    </footer>
+</body>
+</html>

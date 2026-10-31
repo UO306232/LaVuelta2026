@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Diego Hevia Costales" />
+    <meta name="description" content="juegos" />
+   
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" type="image/x-icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+   <!-- contenido de juegos.html  -->
+   <header>
+		<h1> <a href="index.html">La vuelta 2026</a> </h1>
+		<nav>
+			<a href="index.html" title="Página de inicio"> Inicio</a>
+			<a href="ciclista.html" title="Descripcion del ciclista"> Ciclista</a>
+			<a href="equipo.html" title="Descripcion del equipo"> Equipo</a>
+			<a href="etapa.html" title="Descripcion de la etapa"> Etapa</a>
+			<a href="meteorologia.html" title="Pronostico meteorologico"> Meteorología</a>
+			<a href="clasificaciones.html" title="Resumen de las clasificaciones"> Clasificaciones</a>
+			<a href="juegos.html" aria-current="page" title="Juego"> Juegos</a>
+			<a href="ayuda.html" title="Ayuda para el uso de la web"> Ayuda</a>
+		</nav>
+   </header>
+   <nav aria-label="migas">
+	<ol>
+		<li><a href="index.html">Inicio</a></li>
+		<li>&gt;&gt;</li>
+		<li>Juegos</li>
+	</ol>
+   </nav>
+   <main>
+    <h2>Juegos</h2>
+   <h3>¿Conoces la etapa?</h3>
+   <p>Responde a este cuestionario de 10 preguntas sobre la información de la etapa para comprobar tus conocimientos</p>
+   <form>
+    <fieldset>
+        <legend>Etapa 11: Cartagena a Lorca</legend>
+        
+        <label for="num_etapa">1. ¿Que número de etapa es?</label>
+        <input type="number" id="num_etapa" min="1" max="21" />
+
+        <label for="fecha_etapa">2. Selecciona la fecha de celebración de la etapa:</label>
+        <input type="date" id="fecha_etapa" min="2026-01-01" max="2026-12-31" />
+
+        <label for="salida_etapa">3. Selecciona la ciudad o lugar de salida:</label>
+        <select id="salida_etapa">
+            <option value="">Seleciona una opcion</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Lorca">Lorca</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Valencia">Valencia</option>
+        </select>
+
+        <label for="destino_etapa">4. Selecciona la ciudad o lugar de destino:</label>
+        <select id="destino_etapa">
+            <option value="">Seleciona una opcion</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Lorca">Lorca</option>
+            <option value="Granada">Granada</option>
+            <option value="Sevilla">Sevilla</option>
+        </select>
+
+        <fieldset>
+            <legend>5. Selecciona el tipo de etapa:</legend>
+            <label><input type="radio" name="tipo_etapa" id="tipo_llana" value="llana" /> Llana</label>
+            <label><input type="radio" name="tipo_etapa" id="tipo_media" value="media_montana" /> Media montaña</label>
+            <label><input type="radio" name="tipo_etapa" id="tipo_montana" value="montana" /> Montaña</label>
+            <label><input type="radio" name="tipo_etapa" id="tipo_cri" value="cri" /> Contrarreloj individual</label>
+            <label><input type="radio" name="tipo_etapa" id="tipo_cre" value="cre" /> Contrarreloj por equipos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Indica los hitos presentes en la etapa:</legend>
+            <label><input type="checkbox" id="hito_puerto" value="puerto" /> Puerto de montaña</label>
+            <label><input type="checkbox" id="hito_especial" value="especial" /> Puerto categoría especial</label>
+            <label><input type="checkbox" id="hito_sprint" value="sprint" /> Sprint intermedio</label>
+            <label><input type="checkbox" id="hito_bonificado" value="bonificado" /> Sprint bonificado</label>
+            <label><input type="checkbox" id="hito_sin" value="sin_hitos" /> Sin hitos</label>
+        </fieldset>
+
+        <label for="dificultad_etapa">7. Valora la dureza de la etapa (1 al 10):</label>
+        <input type="range" id="dificultad_etapa" min="1" max="10" />
+
+        <label for="longitud_etapa">8. Introduce la longitud de la etapa expresada en kilómetros:</label>
+        <input type="number" id="longitud_etapa" step="0.1" />
+
+        <label for="desnivel_etapa">9. Introduce el desnivel acumulado de la etapa (en metros):</label>
+        <input type="number" id="desnivel_etapa" />
+
+        <label for="descripcion_etapa">10. Describe brevemente la etapa:</label>
+        <textarea id="descripcion_etapa" rows="4" cols="50"></textarea>
+
+        <label for="nombre_usuario">Nombre del participante:</label>
+        <input type="text" id="nombre_usuario" />
+
+        <button type="submit">Enviar respuestas</button>
+    </fieldset>
+    </form>
+   </main>
+   <footer>
+    <p>Diego Hevia Costales</p>
+    <address>
+        <a href="mailto:UO306232@uniovi.es">UO306232@uniovi.es</a>
+    </address>
+    </footer>
+</body>
+</html>

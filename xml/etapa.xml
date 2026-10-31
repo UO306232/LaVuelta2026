@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapas SYSTEM "etapa.dtd">
+<etapas>
+    <etapa>
+        <name>
+            Cartagena a Lorca
+        </name>
+
+        <numEtapa>
+            11
+        </numEtapa>
+
+        <longitudEtapa distance="153.8" measure="Km"/>
+
+        <fechaEtapa>
+            Miércoles, 2 de Septiembre
+        </fechaEtapa>
+
+        <tiempoGanador>
+            3h 17m 16s
+        </tiempoGanador>
+
+        <velocidadMediaGanador speed="46.77" measure="Km/h"/>
+
+        <desnivelEtapa height="1351" measure="m"/>
+
+        <ciudadOrigen>
+            Cartagena
+        </ciudadOrigen>
+
+        <ciudadDestino>
+            Lorca
+        </ciudadDestino>
+
+        <tipoEtapa>
+            llana
+        </tipoEtapa>
+
+        <referencias>
+            <referencia>
+                https://www.lavuelta.es/es/
+            </referencia>
+
+            <referencia>
+                https://www.campusvirtual.uniovi.es/pluginfile.php/629035/mod_folder/content/0/libro-de-ruta-interactivo-lv26.pdf
+            </referencia>
+
+            <referencia>
+                https://es.wikipedia.org/wiki/Vuelta_a_Espa%C3%B1a_2026
+            </referencia>
+        </referencias>
+
+        <fotografias>
+            <fotografia>
+                multimedia/cartagena.jpg
+            </fotografia>
+        </fotografias>
+
+        <videos>
+            <video>
+                multimedia/video_etapa11.mp4
+            </video>
+        </videos>
+
+        <podcasts>
+            <podcast>
+                multimedia/podcast_etapa11.mp3
+            </podcast>
+        </podcasts>
+
+        <lugarSalida longitud="-0.986"  latitud="37.598"  altitud="12">
+            Plaza de los Héroes de Cavite, Cartagena
+        </lugarSalida>
+
+        <lugarMeta longitud="-1.699"  latitud="37.671"  altitud="340">
+            Carretera de Granada, Lorca
+        </lugarMeta>
+
+        <hitos>
+            <hito longitud="-1.20" latitud="37.58" altitud="225" distance="111.9">
+                Sprint intermedio y Bonificado de Totana
+            </hito>
+
+            <hito longitud="-1.57" latitud="37.8" altitud="623" distance="121.8">
+                Alto de Aledo (Puerto 3ª Categoría)
+            </hito>
+        </hitos>
+
+        <puntosAnonimos>
+            <punto longitud="-0.95" latitud="37.60" altitud="20" distance="2.8"/>
+            <punto longitud="-0.90" latitud="37.62" altitud="15" distance="6.5"/>
+            <punto longitud="-0.87" latitud="37.60" altitud="12" distance="10.8"/>
+            <punto longitud="-0.82" latitud="37.59" altitud="10" distance="15.5"/>
+            <punto longitud="-0.78" latitud="37.58" altitud="10" distance="19.5"/>
+            <punto longitud="-0.81" latitud="37.63" altitud="8" distance="23.0"/>
+            <punto longitud="-0.84" latitud="37.67" altitud="5" distance="28.0"/>
+            <punto longitud="-0.85" latitud="37.71" altitud="6" distance="30.6"/>
+            <punto longitud="-0.83" latitud="37.75" altitud="10" distance="36.2"/>
+            <punto longitud="-0.81" latitud="37.77" altitud="15" distance="43.0"/>
+            <punto longitud="-0.97" latitud="37.74" altitud="36" distance="48.5"/>
+            <punto longitud="-1.06" latitud="37.75" altitud="55" distance="58.6"/>
+            <punto longitud="-1.11" latitud="37.74" altitud="80" distance="69.3"/>
+            <punto longitud="-1.17" latitud="37.73" altitud="128" distance="75.9"/>
+            <punto longitud="-1.23" latitud="37.70" altitud="150" distance="82.7"/>
+            <punto longitud="-1.30" latitud="37.69" altitud="180" distance="95.2"/>
+            <punto longitud="-1.37" latitud="37.69" altitud="210" distance="101.4"/>
+            <punto longitud="-1.44" latitud="37.70" altitud="241" distance="110.3"/>
+            <punto longitud="-1.45" latitud="37.70" altitud="225" distance="111.9"/>
+            <punto longitud="-1.48" latitud="37.72" altitud="290" distance="115.0"/>
+            <punto longitud="-1.52" latitud="37.75" altitud="380" distance="118.5"/>
+            <punto longitud="-1.57" latitud="37.80" altitud="623" distance="121.8"/>
+            <punto longitud="-1.60" latitud="37.78" altitud="560" distance="128.0"/>
+            <punto longitud="-1.64" latitud="37.75" altitud="470" distance="135.0"/>
+            <punto longitud="-1.68" latitud="37.70" altitud="340" distance="145.8"/>
+        </puntosAnonimos>
+
+        <clasificacionEtapa>
+            <corredor diferencia="0">
+                J.Brennan
+            </corredor>
+
+            <corredor diferencia="0">
+                B.Coquard
+            </corredor>
+
+            <corredor diferencia="0">
+                J.Meeus
+            </corredor>
+        </clasificacionEtapa>
+
+        <clasificacionGeneral>
+            <corredor diferencia="0">
+                E.Mas
+            </corredor>
+
+            <corredor diferencia="+1min 18s">
+                P.Roglic
+            </corredor>
+
+            <corredor diferencia="1min 39s">
+                F.Gall
+            </corredor>
+        </clasificacionGeneral>
+
+        <clasificacionEquipos>
+            <equipo diferencia="0">
+                XDS ASTANA TEAM
+            </equipo>
+
+            <equipo diferencia="0">
+                GROUPAMA-FDJ UNITED
+            </equipo>
+
+            <equipo diferencia="0">
+                TEAM VISMA | LEASE A BIKE
+            </equipo>
+        </clasificacionEquipos>
+
+    </etapa>
+</etapas>

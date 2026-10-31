@@ -1,0 +1,165 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos:                  */
+/*  Correo electrónico (uniovi):         */
+/*  Grupo de laboratorio:                */
+/* ***************************************/
+
+/* Especificidad: 001 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Especificidad: 001 */
+header {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+/* Especificidad: 001 */
+main {
+    grid-area: contenido;
+}
+
+/* Especificidad: 001 */
+footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+
+/* Especificidad: 002 */
+header + nav[aria-label="migas"] {
+    grid-area: migas;
+}
+
+/* Especificidad: 002 */
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    gap: 0.8em;
+}
+
+/* Especificidad: 003 */
+form fieldset > fieldset {
+    border: none;
+    padding: 0;
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+/* Especificidad: 003 */
+form fieldset > button[type="submit"] {
+    align-self: center;
+    width: fit-content;
+    padding: 0.5em 1.5em;
+    margin-top: 1em;
+}
+
+/* Especificidad: 011 */
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Especificidad: 011 */
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Especificidad: 011 */
+section:has(article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Especificidad: 012 */
+section:has(picture) > h3 {
+    flex-basis: 100%;
+}
+
+/* Especificidad: 012 */
+section:has(picture) > picture {
+    order: 1;
+}
+
+/* Especificidad: 012 */
+section:has(picture) > ul {
+    list-style: none;
+    order: 2;
+}
+
+/* Especificidad: 012 */
+section:has(article) > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Media Queries para adaptabilidad */
+
+/* Tablets (1024px) */
+@media (max-width: 1024px) {
+    /* ADVERTENCIA: redefinicion de la propiedad con valor original row*/
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    section:has(article) {
+        grid-template-columns: repeat(2, 1fr); /* ADVERTENCIA: redefinicion de la propiedad con valor original repeat(4, 1fr)*/
+    }
+
+    /* Ocultar las migas de pan en tablets*/
+    header + nav[aria-label="migas"] {
+        display: none;
+    }
+}
+
+/* Moviles (768ox)*/
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section:has(article) {
+        grid-template-columns: 1fr; /* ADVERTENCIA: redefinicion de la propiedad con valor original repeat(4, 1fr)*/
+    }
+
+    /* Ocultar las migas de pan en moviles*/
+    header + nav[aria-label="migas"] {
+        display: none; /* ADVERTENCIA: redefinicion de la propiedad con valor original block*/
+    }
+}
