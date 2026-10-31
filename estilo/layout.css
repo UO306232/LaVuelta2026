@@ -152,6 +152,12 @@ section:has(article) > h3 {
     header nav {
         flex-direction: column;
         align-items: center;
+        gap: 0.5em;
+    }
+
+    header nav a {
+        padding: 0.5em 1em;
+        display: inline-block;
     }
 
     section:has(article) {
